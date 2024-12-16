@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favlogo.png">
+    <title>Couture</title>
+</head>
+<body class="bg-beige poppins" >
+    <nav class="navbar">
+        <!-- Main navigation menu -->
+        <ul class="nav-list">
+            <li class="nav-item active"> <a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"> <a class="nav-link" href="search.html">SEARCH</a></li>
+            <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE</a></li>
+            <li class="nav-item"><a class="nav-link" href="bag.html">BAG</a></li>
+            <li class="nav-item"><a class="nav-link" href="#account">ACCOUNT</a></li>
+        </ul>
+    
+        <!-- Hamburger menu (hidden on large screens) -->
+        <div class="hamburger-nav">
+            <div class="menu-logo" onclick="toggleMenu()">
+                <img src="images/menu.png" alt="Menu">
+            </div>
+    
+            <div id="dropdown-menu" class="drop-down-menu hidden">
+                <ul class="smallnav-container">
+                    <li><a href="index.html" class="smallnav-links">HOME</a></li>
+                    <li><a href="search.html" class="smallnav-links">SEARCH</a></li>
+                    <li><a href="explore.html" class="smallnav-links">EXPLORE</a></li>
+                    <li><a href="bag.html" class="smallnav-links">BAG</a></li>
+                    <li><a href="#account" class="smallnav-links">ACCOUNT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
+        <div>
+            <img src="images/Logo.png" class="explore-logo">
+        </div>
+
+        <div>
+            <div class="explore-btn-container">
+                <button class="explore-btn poppins">VIEW ALL</button>
+                <button class="explore-btn poppins">LONG SLEEVES</button>
+                <button class="explore-btn poppins">HOODIES</button>
+                <button class="explore-btn poppins">PANTS</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-overview">
+        <div class="container">
+            <!-- 1ST ROW -->
+        <div class="image-container-explore">
+            <div>
+                <img src="images/ProductOverview/Oversizedcrew.png" alt="Image 1" onclick="">
+                <div class="product-header-container">
+                    <h2>Long Sleeves</h2>
+                    <h2>Price</h2>
+                </div>
+            </div>
+            <div>
+                <img src="images/ProductOverview/Oversizedhoodie.png" alt="Image 2" onclick="">
+                <div class="product-header-container">
+                    <h2>Hoodies</h2>
+                    <h2>Price</h2>
+                </div>
+            </div>
+            <div>
+                <img src="images/ProductOverview/Quarterzip Copy.png" alt="Image 3" onclick="">
+                <div class="product-header-container">
+                    <h2>Quarterzips</h2>
+                    <h2>Price</h2>
+                </div>
+            </div>
+            <div>
+                <img src="images/ProductOverview/Quarterzip Copy.png" alt="Image 4" onclick="">
+                <div class="product-header-container">
+                    <h2>Quarterzips</h2>
+                    <h2>Price</h2>
+                </div>
+            </div>
+        </div>
+
+            <!-- 2ND ROW -->
+            <div class="image-container-explore">
+                <div>
+                    <img src="images/ProductOverview/Oversizedcrew.png" alt="Image 1" onclick="">
+                    <div class="product-header-container">
+                        <h2>Long Sleeves</h2>
+                        <h2>Price</h2>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/ProductOverview/Oversizedhoodie.png" alt="Image 2" onclick="">
+                    <div class="product-header-container">
+                        <h2>Hoodies</h2>
+                        <h2>Price</h2>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/ProductOverview/Quarterzip Copy.png" alt="Image 3" onclick="">
+                    <div class="product-header-container">
+                        <h2>Quarterzips</h2>
+                        <h2>Price</h2>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/ProductOverview/Quarterzip Copy.png" alt="Image 3" onclick="">
+                    <div class="product-header-container">
+                        <h2>Quarterzips</h2>
+                        <h2>Price</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
