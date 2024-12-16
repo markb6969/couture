@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/favlogo.png">
+    <script src="main.js"></script>
     <title>Couture</title>
 </head>
 <body class="bg-beige poppins" >
@@ -18,7 +19,7 @@
             <li class="nav-item"> <a class="nav-link" href="search.html">SEARCH</a></li>
             <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE</a></li>
             <li class="nav-item"><a class="nav-link" href="bag.html">BAG</a></li>
-            <li class="nav-item"><a class="nav-link" href="#account">ACCOUNT</a></li>
+            <li class="nav-item"><a class="nav-link" href="account.html">ACCOUNT</a></li>
         </ul>
     
         <!-- Hamburger menu (hidden on large screens) -->
@@ -33,42 +34,35 @@
                     <li><a href="search.html" class="smallnav-links">SEARCH</a></li>
                     <li><a href="explore.html" class="smallnav-links">EXPLORE</a></li>
                     <li><a href="bag.html" class="smallnav-links">BAG</a></li>
-                    <li><a href="#account" class="smallnav-links">ACCOUNT</a></li>
+                    <li><a href="account.html" class="smallnav-links">ACCOUNT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
 
-<div class="shopping-bag-container">
-    <div class="bag-header">
-        <h1 class="tracking-semi-semi-wide">DETAILS</h1>
-        <div class="icon-cart">
-            <svg class="aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
-            </svg>
-            <span>0</span>
-        </div>
+    <div id="contentTab">
+        
     </div>
-</div>
+
+
+
+<div id="app"></div>
+<div class="temporaryContent">
 
 <!-- Detail Info -->
-<section>
-    <!-- 2 Columns (1 column in less than 768px) -->
-    <div class="product-container">
+    <div class="product-container detail">
         <!-- 1st Column: Images of the product -->
         <div class="detail-img-container">
-
-            <!-- PLACE HOLDER ONLY -->
-            <img src="images/ProductOverview/Oversizedcrew.png" class="st-img">     
+            <img src="images/ProductOverview/Oversizedcrew.png" class="st-img image">     
             <img src="images/ProductOverview/Oversizedhoodie.png" class="nd-img">
             <img src="images/Footer.png" class="rd-img">
         </div>
 
         <!-- 2nd Column: Details of the product -->
-        <div class="product-details">
-            <h2>Title</h2>
-            <h3> ₱ Price</h3>
+        <div class="product-details content">
+            <h2 class="name">Name</h2>
+            <h3 class="price">₱ Price</h3>
 
             <div class="color-section">
                 <h2>Color: </h2>
@@ -89,55 +83,29 @@
                     <button class="explore-btn pixel">XXL</button>
                     <button class="explore-btn pixel">3XL</button>
                 </div>
-                <button class="discover pixel add-to-bag-btn">ADD TO BAG</button>
+                <button class="discover pixel add-to-bag-btn buttons" id="checkoutButton">ADD TO BAG</button>
+
             </div>
         </div>
-    </div>
-</section>
-
-
-<section>
-    <div class="listProduct">
-        <div class="item">
-            <img src="images/ProductOverview/Oversizedcrew.png">
-            <h2>PRODUCT NAME</h2>
-            <div class="price">1000</div>
-            <button>Add to cart</button>
-        </div>
-    </div>
-</section>
-
-
-<div class="cartTab">
-    <h1>MY BAG</h1>
-    <div class="listCart">
-        <div class="item">
-            <div class="bag-nav-image">
-                <img src="images/ProductOverview/Oversizedcrew.png" alt="">
-                <div class="item-name"></div>
-                <div class="total-price">price</div>
-                <div class="quantity">
-                    <span>-</span>
-                    <span>1</span>
-                    <span>+</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="btn-bag">
-        <button class="close pixel">CLOSE</button>
-        <button class="checkOut pixel">CHECKOUT</button>
     </div>
 </div>
 
+<script>
+    function toggleMenu() {
+    const dropdownMenu = document.getElementById("dropdown-menu");
+    if (dropdownMenu.classList.contains("hidden")) {
+        dropdownMenu.classList.remove("hidden");
+        dropdownMenu.style.maxHeight = "600px"; // Adjust height as needed
+    } else {
+        dropdownMenu.classList.add("hidden");
+        dropdownMenu.style.maxHeight = "0px";
+    }
+}
 
+</script>
 
+<script src="cart.js" type="module"></script>
+<script src="details.js" type="module"></script>
 
-
-
-
-
-
-<script src="main.js"></script>
 </body>
 </html>

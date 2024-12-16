@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "name": "Hoodie",
+        "price": "₱ 1000",
+        "image": "images/ProductOverview/Oversizedcrew.png",
+        "details": [
+            "images/ProductDetails/hoodie1.png",
+            "images/ProductDetails/hoodie2.png",
+            "images/ProductDetails/hoodie3.png"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Hoodadie",
+        "price": "₱ 900",
+        "image": "images/ProductOverview/Oversizedcrew.png",
+        "details": [
+            "images/ProductDetails/hoodadie1.png",
+            "images/ProductDetails/hoodadie2.png",
+            "images/ProductDetails/hoodadie3.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Hooaddie",
+        "price": "₱ 800",
+        "image": "images/ProductOverview/Oversizedcrew.png"
+    },
+    {
+        "id": 4,
+        "name": "Hooaddie",
+        "price": "₱ 700",
+        "image": "images/ProductOverview/Oversizedcrew.png"
+    },
+    {
+        "id": 5,
+        "name": "Hoodadie",
+        "price": "₱ 500",
+        "image": "images/ProductOverview/Oversizedcrew.png"
+    },
+    {
+        "id": 6,
+        "name": "Hoofdie",
+        "price": "₱ 600",
+        "image": "images/ProductOverview/Oversizedcrew.png"
+    },
+    {
+        "id": 7,
+        "name": "Hoosdie",
+        "price": "₱ 200",
+        "image": "images/ProductOverview/Oversizedcrew.png"
+    },
+    {
+        "id": 8,
+        "name": "Hooadie",
+        "price": "₱ 2000",
+        "image": "images/ProductOverview/Oversizedcrew.png"
+    }
+]

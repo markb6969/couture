@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favlogo.png">
+    <title>Couture</title>
+</head>
+<body class="bg-beige poppins ">
+    <nav class="navbar">
+        <!-- Main navigation menu -->
+        <ul class="nav-list">
+            <li class="nav-item active"> <a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"> <a class="nav-link" href="search.html">SEARCH</a></li>
+            <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE</a></li>
+            <li class="nav-item"><a class="nav-link" href="bag.html">BAG</a></li>
+            <li class="nav-item"><a class="nav-link" href="account.html">ACCOUNT</a></li>
+        </ul>
+    
+        <!-- Hamburger menu (hidden on large screens) -->
+        <div class="hamburger-nav">
+            <div class="menu-logo" onclick="toggleMenu()">
+                <img src="images/menu.png" alt="Menu">
+            </div>
+    
+            <div id="dropdown-menu" class="drop-down-menu hidden">
+                <ul class="smallnav-container">
+                    <li><a href="index.html" class="smallnav-links">HOME</a></li>
+                    <li><a href="search.html" class="smallnav-links">SEARCH</a></li>
+                    <li><a href="explore.html" class="smallnav-links">EXPLORE</a></li>
+                    <li><a href="bag.html" class="smallnav-links">BAG</a></li>
+                    <li><a href="account.html" class="smallnav-links">ACCOUNT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="bag-logo">
+            <img src="images/Logo.png" class="explore-logo">
+        </div>
+    </section>
+
+
+    <div class="form-container">
+        <!-- 1ST COLUMN -->
+        <div class="login-column">
+            <h1 class="poppins">Log in to your account</h1>
+            <div class="input-container">
+                <input type="email" placeholder="E-mail" id="email" required class="poppins">
+                <input type="password" placeholder="Password" id="password" required class="poppins">
+            </div>
+            <button class="login-btn pixel" onclick="validateLogin()">Log In</button>
+            <p><a href="#">Have you forgotten your password?</a></p>
+        </div>
+    
+        <!-- 2ND COLUMN -->
+        <div class="register-column">
+            <h1>Need an account?</h1>
+            <button class="register-btn pixel">Register</button>
+        </div>
+    </div>
+    
+    
+    
+    <script>
+        function toggleMenu() {
+        const dropdownMenu = document.getElementById("dropdown-menu");
+        if (dropdownMenu.classList.contains("hidden")) {
+            dropdownMenu.classList.remove("hidden");
+            dropdownMenu.style.maxHeight = "600px"; // Adjust height as needed
+        } else {
+            dropdownMenu.classList.add("hidden");
+            dropdownMenu.style.maxHeight = "0px";
+        }
+    }
+
+        // Function to validate login inputs
+        function validateLogin() {
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            if (email === "" || password === "") {
+                alert("Please fill in both email and password fields.");
+            } else {
+                alert("Login successful! Welcome back.");
+            }
+        }
+    </script>
+
+</body>
+</html>

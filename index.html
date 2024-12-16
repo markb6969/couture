@@ -20,7 +20,7 @@
             <li class="nav-item"> <a class="nav-link" href="search.html">SEARCH</a></li>
             <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE</a></li>
             <li class="nav-item"><a class="nav-link" href="bag.html">BAG</a></li>
-            <li class="nav-item"><a class="nav-link" href="#account">ACCOUNT</a></li>
+            <li class="nav-item"><a class="nav-link" href="account.html">ACCOUNT</a></li>
         </ul>
     
         <!-- Hamburger menu (hidden on large screens) -->
@@ -35,7 +35,7 @@
                     <li><a href="search.html" class="smallnav-links">SEARCH</a></li>
                     <li><a href="explore.html" class="smallnav-links">EXPLORE</a></li>
                     <li><a href="bag.html" class="smallnav-links">BAG</a></li>
-                    <li><a href="#account" class="smallnav-links">ACCOUNT</a></li>
+                    <li><a href="account.html" class="smallnav-links">ACCOUNT</a></li>
                 </ul>
             </div>
         </div>
@@ -107,7 +107,7 @@
             <p>We craft each piece with precision and passion, making every stitch a testament to your unique beauty.</p>
     
             <div class=" ">
-                <button class="pixel discover">Discover more</button>
+                <button class="pixel discover" onclick="window.location.href='search.html';">Discover more</button>
             </div>
         </div>
     </section>
@@ -123,7 +123,7 @@
         <!-- Header Section -->
         <div class="header-container">
             <h1 class="product-header">OUR  PRODUCTS</h1>
-            <button class="btn-detail pixel">See all</button>
+            <button class="btn-detail pixel" onclick="window.location.href='explore.html';">See all</button>
         </div>
 
         <!-- Images Section -->
@@ -132,45 +132,45 @@
                 <img src="images/ProductOverview/Oversizedcrew.png" alt="Image 1">
                 <div class="product-header-container">
                     <h2>Long Sleeves</h2>
-                    <button class="btn-detail pixel">Details</button>
+                    <button class="btn-detail pixel" onclick="window.location.href='explore.html';">Details</button>
                 </div>
             </div>
             <div>
-                <img src="images/ProductOverview/Oversizedhoodie.png" alt="Image 2">
+                <img src="images/2.png" alt="Image 2">
                 <div class="product-header-container">
                     <h2>Hoodies</h2>
-                    <button class="btn-detail pixel">Details</button>
+                    <button class="btn-detail pixel" onclick="window.location.href='explore.html';">Details</button>
                 </div>
             </div>
             <div>
                 <img src="images/ProductOverview/Quarterzip Copy.png" alt="Image 3">
                 <div class="product-header-container">
                     <h2>Quarterzips</h2>
-                    <button class="btn-detail pixel">Details</button>
+                    <button class="btn-detail pixel" onclick="window.location.href='explore.html';">Details</button>
                 </div>
             </div>
             
         </div>
         <div class="image-container">
             <div>
-                <img src="images/ProductOverview/Oversizedcrew.png" alt="Image 1">
+                <img src="images/4.png" alt="Image 1">
                 <div class="product-header-container">
-                    <h2>Long Sleeves</h2>
-                    <button class="btn-detail pixel">Details</button>
+                    <h2>Women Fits</h2>
+                    <button class="btn-detail pixel" onclick="window.location.href='explore.html';">Details</button>
                 </div>
             </div>
             <div>
-                <img src="images/ProductOverview/Oversizedhoodie.png" alt="Image 2">
+                <img src="images/5.png" alt="Image 2">
                 <div class="product-header-container">
-                    <h2>Hoodies</h2>    
-                    <button class="btn-detail pixel">Details</button>
+                    <h2>Regular Fits</h2>    
+                    <button class="btn-detail pixel" onclick="window.location.href='explore.html';">Details</button>
                 </div>
             </div>
             <div>
-                <img src="images/ProductOverview/Quarterzip Copy.png" alt="Image 3">
+                <img src="images/3.png" alt="Image 3">
                 <div class="product-header-container">
-                    <h2>Quarterzips</h2>
-                    <button class="btn-detail pixel">Details</button>
+                    <h2>Oversized Fleece</h2>
+                    <button class="btn-detail pixel" onclick="window.location.href='explore.html';">Details</button>
                 </div>
             </div>
             
@@ -180,8 +180,16 @@
 
 
 
+<!-- 
 
+<div id="app"></div>
+<div id="temporaryContent">
+    <div class="listProduct">
 
+    </div>
+</div>
+
+ -->
 
 <!-- FOOTER -->
 
@@ -192,8 +200,22 @@
 </div>
 
 
-    
+<script>
+    function toggleMenu() {
+    const dropdownMenu = document.getElementById("dropdown-menu");
+    if (dropdownMenu.classList.contains("hidden")) {
+        dropdownMenu.classList.remove("hidden");
+        dropdownMenu.style.maxHeight = "600px"; // Adjust height as needed
+    } else {
+        dropdownMenu.classList.add("hidden");
+        dropdownMenu.style.maxHeight = "0px";
+    }
+}
 
-<script src="main.js"></script>
+</script>
+
+    <script src="cart.js" type="module"></script>
+    <script src="main.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
             <li class="nav-item"> <a class="nav-link" href="search.html">SEARCH</a></li>
             <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE</a></li>
             <li class="nav-item"><a class="nav-link" href="bag.html">BAG</a></li>
-            <li class="nav-item"><a class="nav-link" href="#account">ACCOUNT</a></li>
+            <li class="nav-item"><a class="nav-link" href="account.html">ACCOUNT</a></li>
         </ul>
     
         <!-- Hamburger menu (hidden on large screens) -->
@@ -33,7 +33,7 @@
                     <li><a href="search.html" class="smallnav-links">SEARCH</a></li>
                     <li><a href="explore.html" class="smallnav-links">EXPLORE</a></li>
                     <li><a href="bag.html" class="smallnav-links">BAG</a></li>
-                    <li><a href="#account" class="smallnav-links">ACCOUNT</a></li>
+                    <li><a href="account.html" class="smallnav-links">ACCOUNT</a></li>
                 </ul>
             </div>
         </div>
@@ -46,8 +46,8 @@
         </div>
     </section>
 
-    <!-- MOVING TEXT (TRENDING) -->
-    <div class="ticker bg-custom-black1">
+        <!-- MOVING TEXT (TRENDING) -->
+        <div class="ticker bg-custom-black1">
             <ul class="white medium">
                 <li>
                     <span class="pixel text">SALE</span>
@@ -101,6 +101,33 @@
             </ul>
     </div>
 
+    <div id="checkoutContent">
+        <div id="cartItems"></div>
+        <div id="totalAmount"></div>
+
+        <div class="checkout-btn">
+            <button id="confirmCheckout" class="checkout-button pixel">Confirm Checkout</button>
+        </div>
+    </div>
+
+
+
+    
+    <script>
+        function toggleMenu() {
+        const dropdownMenu = document.getElementById("dropdown-menu");
+        if (dropdownMenu.classList.contains("hidden")) {
+            dropdownMenu.classList.remove("hidden");
+            dropdownMenu.style.maxHeight = "600px"; // Adjust height as needed
+        } else {
+            dropdownMenu.classList.add("hidden");
+            dropdownMenu.style.maxHeight = "0px";
+        }
+    }
+
+    </script>
+
     <script src="main.js"></script>
+    <script src="checkout.js" type="module"></script>
 </body>
 </html>
